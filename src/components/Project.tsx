@@ -30,7 +30,7 @@ export function Project({
 }: ProjectProps) {
   return (
     <div className="bg-purple-900 flex flex-row min-h-min" >
-      <img src={image} className="w-1/2" />
+      <img src={image} className="w-1/2 rounded-xl" />
 
       <div className="m-6 space-y-5">
         <h1 className="text-2xl font-bold">

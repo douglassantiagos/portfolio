@@ -3,9 +3,9 @@ import { Title } from "../components/Title";
 
 export function Projects() {
   return (
-    <div className="flex flex-col min-h-screen max-auto">
+    <div id="projects" className="flex flex-col min-h-screen max-auto">
       <section className="mx-20 my-10 space-y-10">
-        <Title title="Projects" />
+        <Title title="Projects I've Built" />
 
         <Project
           image="./pokedex-photo.png"
@@ -48,6 +48,19 @@ export function Projects() {
           tech_sixth="HTML/CSS"
           linkVisit="https://jobscalc-beta.vercel.app/"
           linkGithub="https://github.com/douglassantiagos/Maratona-JobsCalc"
+        />
+
+        <Project
+          image="./layout-worldtrip.png"
+          title="WorldTrip"
+          subtitle="Desafio com objetivo de desenvolver uma landing page web responsiva contando a história de cada continente com tecnologias atuais como react e next.js"
+          tech_pri="Typescript"
+          tech_sec="Next.js"
+          tech_third="React"
+          tech_fourth="ChakraUI"
+          tech_fifth="Swiper"
+          linkVisit="https://worldtrip-phi-eight.vercel.app/"
+          linkGithub="https://github.com/douglassantiagos/reactjs-desafio07-interface-com-chakra-ui"
         />
       </section>
     </div>
