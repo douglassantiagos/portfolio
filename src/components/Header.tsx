@@ -1,4 +1,5 @@
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { Button } from "./Button";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -65,9 +66,7 @@ export function Header() {
             </a>
           </li>
           <li className="rotate-90 hover:rotate-0 transition-all duration-200">
-            <a className="cursor-pointer border-2 px-4 py-2 border-purple-600 rounded-xl text-purple-600 hover:font-bold hover:bg-purple-600/10 transition-all duration-450 ease-linear">
-              Resume
-            </a>
+            <Button title='Resume' />
           </li>
         </ul>
       </div>

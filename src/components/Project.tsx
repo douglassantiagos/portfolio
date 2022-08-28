@@ -1,4 +1,4 @@
-import { Button } from "../components/Button";
+import { ButtonIcon } from "./ButtonIcon";
 import { Title } from "../components/Title";
 
 interface ProjectProps {
@@ -48,8 +48,8 @@ export function Project({
           <li>{tech_sixth}</li>
         </ul>
         <div className="flex space-x-5">
-          <Button title='Visit' href={linkVisit} />
-          <Button title='GitHub' href={linkGithub} />
+          <ButtonIcon title='Visit' href={linkVisit} />
+          <ButtonIcon title='GitHub' href={linkGithub} />
         </div>
       </div>
     </div>
