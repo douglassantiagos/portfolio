@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-purple-900 text-purple-600; font-family: 'Orbitron', sans-serif, 'Roboto', sans-serif;
+  @apply bg-purple-900 text-purple-600 dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] dark:text-purple-900;  font-family: 'Orbitron', sans-serif, 'Roboto', sans-serif;
 }
