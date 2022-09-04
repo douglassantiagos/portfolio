@@ -12,6 +12,10 @@ module.exports = {
           900: '#171522',
         },
         'yellow': 'rgb(253 224 71 / var(--tw-bg-opacity))',
+        'orange:': {
+          300: '#FF9900',
+          600: '#FF7C00'
+        }
       },
 
       fontFamily: {
@@ -23,8 +27,4 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar')
   ],
-
-  variants: {
-    scrollbar: ['rounded']
-  }
 }

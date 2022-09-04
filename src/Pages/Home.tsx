@@ -33,7 +33,7 @@ export function Home() {
 
   return (
     <motion.div 
-      id="home" 
+      id="home"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}

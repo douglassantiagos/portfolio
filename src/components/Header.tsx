@@ -1,10 +1,13 @@
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { Moon, Sun } from "phosphor-react";
+import { Link } from 'react-router-dom';
 
 import { Button } from "./Button";
 import { Logo } from "./Logo";
 import { useTheme } from "../hooks/useTheme";
+import { ActiveLink } from "./ActiveLink";
+import { useScrollPosition } from "../hooks/useScrollPosition";
 
 export function Header() {
   const { theme, setTheme } = useTheme();
@@ -40,6 +43,9 @@ export function Header() {
       },
     },
   }
+
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition)
 
   return (
     <>
@@ -111,26 +117,31 @@ export function Header() {
         )}
 
         <ul className="fixed flex flex-col space-y-24 items-center top-1/4">
-          <motion.li variants={itemNav} className=" text-white dark:text-purple-900">
-            <a href="#home" className="cursor-pointer p-4">
-              Home
-            </a>          
-          </motion.li>
-          <motion.li variants={itemNav} className=" text-white dark:text-purple-900">
-            <a href="#about" className="cursor-pointer p-4">
-              About
-            </a>          
-          </motion.li>
-          <motion.li variants={itemNav} className=" text-white dark:text-purple-900">
-            <a href="#projects" className="cursor-pointer p-4">
-              Projects
-            </a>
-          </motion.li>
-          <motion.li variants={itemNav} className=" text-white dark:text-purple-900">
-            <a href="#contact" className="cursor-pointer p-4">
-              Contact
-            </a>
-          </motion.li>
+          <ActiveLink 
+            href="#home" 
+            className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}
+          >
+            Home
+          </ActiveLink>
+          <ActiveLink 
+            href="#about"
+            className={scrollPosition > 800 && scrollPosition < 1700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}            
+          >
+            About
+          </ActiveLink>
+          <ActiveLink 
+            href="#projects"
+            className={scrollPosition > 1700 && scrollPosition < 2700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
+          >
+            Projects            
+          </ActiveLink>
+          <ActiveLink 
+            href="#contact"
+            className={scrollPosition > 2700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
+          >
+            Contact
+          </ActiveLink>
+
           <motion.li variants={itemNav}>
             <Button title='Resume' />
           </motion.li>

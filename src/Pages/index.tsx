@@ -4,13 +4,8 @@ import { Home } from "./Home";
 import { Projects } from "./Projects";
 
 export function Pages() {
-  
-
   return (
-    <div
-      id="home"
-      className="flex flex-col m-auto min-h-screen max-w-7xl"
-    >
+    <div className="flex flex-col m-auto min-h-screen max-w-7xl">
       <Home />
       <About />
       <Projects /> 
