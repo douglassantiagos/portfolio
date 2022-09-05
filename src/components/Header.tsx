@@ -63,7 +63,7 @@ export function Header() {
               <abbr title="GitHub">
                 <FiGithub 
                   size={22} 
-                  className="cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" 
+                  className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
             </a>          
@@ -73,7 +73,7 @@ export function Header() {
               <abbr title="Linkedin">
                 <FiLinkedin 
                   size={22} 
-                  className="cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" 
+                  className={scrollPosition > 375 && scrollPosition < 2226 ?  "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
             </a>
@@ -83,7 +83,7 @@ export function Header() {
               <abbr title="Instagram">
                 <FiInstagram
                   size={22} 
-                  className="cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" 
+                  className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
             </a>
@@ -125,19 +125,19 @@ export function Header() {
           </ActiveLink>
           <ActiveLink 
             href="#about"
-            className={scrollPosition > 800 && scrollPosition < 1700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}            
+            className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}            
           >
             About
           </ActiveLink>
           <ActiveLink 
             href="#projects"
-            className={scrollPosition > 1700 && scrollPosition < 2700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
+            className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}                   
           >
             Projects            
           </ActiveLink>
           <ActiveLink 
             href="#contact"
-            className={scrollPosition > 2700 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
+            className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
           >
             Contact
           </ActiveLink>

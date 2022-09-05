@@ -3,10 +3,12 @@ import { motion, Variants } from "framer-motion";
 export function Home() {
   const Variants: Variants = {
     offscreen: {
-      y: 900,
+      y: 300,
+      opacity: -0.1,
     },
     onscreen: {
       y: 0,
+      opacity: 1,
       transition: {
         type: "spring",
         bounce: 0.4,
@@ -18,10 +20,12 @@ export function Home() {
 
   const imageVariants: Variants = {
     offscreen: {
-      y: 900
+      y: 900,
+      opacity: -0.1
     },
     onscreen: {
       y: 0,
+      opacity: 1,
       transition: {
         type: "spring",
         bounce: 0.4,
@@ -37,7 +41,7 @@ export function Home() {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
-      className="grid grid-cols-2 min-h-screen"    
+      className="grid grid-cols-2 min-h-screen m-auto max-w-7xl"    
     >
       <motion.section variants={Variants} className="flex flex-col items-start justify-center">
         <div className="flex items-center">
@@ -52,7 +56,7 @@ export function Home() {
       </motion.section>
 
       <motion.section variants={imageVariants} className="flex items-center justify-center w-full pb-20 shadow-xl rounded-xl">
-        <img className="w-full rounded-b-full" src="./avatar.png" />
+        <img className="w-full rounded-b-full drop-shadow-lg" src="./avatar.png" />
       </motion.section>        
     </motion.div>
   )

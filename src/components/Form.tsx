@@ -48,12 +48,12 @@ export function Form() {
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
 
-      <footer className="self-start mt-5">
+      <footer className="self-end mt-5">
         <button
           type="submit"
           value="Enviar"
           disabled={comment.length === 0 || isSendingMessage}
-          className="flex items-center p-2 text-white bg-purple-600 rounded-lg text-sm hover:bg-transparent hover:ring-2 hover:ring-purple-600 transition-all duration-450 ease-linear disabled:opacity-50 hover:disabled:bg-purple-600 hover:disabled:ring-0 hover:disabled:cursor-not-allowed dark:bg-purple-900 dark:text-white dark:hover:bg-transparent dark:hover:text-purple-900 dark:hover:ring-yellow dark:hover:disabled:bg-purple-900 dark:hover:disabled:text-white"
+          className="flex items-center p-2 text-white bg-purple-600 rounded-lg text-sm hover:bg-transparent hover:ring-2 hover:ring-purple-600 transition-all duration-450 ease-linear disabled:opacity-50 hover:disabled:bg-purple-600 hover:disabled:ring-0 hover:disabled:cursor-not-allowed dark:bg-purple-900 dark:text-white dark:hover:bg-transparent dark:hover:text-purple-900 dark:hover:ring-black dark:hover:disabled:bg-purple-900 dark:hover:disabled:text-white"
         >
           
           { isSendingMessage

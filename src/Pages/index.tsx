@@ -5,7 +5,7 @@ import { Projects } from "./Projects";
 
 export function Pages() {
   return (
-    <div className="flex flex-col m-auto min-h-screen max-w-7xl">
+    <div className="flex flex-col">
       <Home />
       <About />
       <Projects /> 
