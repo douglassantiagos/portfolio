@@ -15,23 +15,23 @@ export function Project({ data }: ProjectProps) {
   }  
 
   return (
-    <div className="flex flex-col"> 
+    <div className="flex flex-col mt-10"> 
       { Object.entries(data).splice(0, amountProjects).map(([key, value]) => {
         return (
-          <section key={key} className="flex flex-row space-x-4 shadow-xl my-5 rounded-xl border-r-4 border-purple-600 dark:bg-white dark:border-r-4 dark:border-orange-400">
+          <section key={key} className="flex flex-row lg:flex-col lg:items-center lg:max-w-[35.3rem] space-x-4 shadow-xl my-5 lg:mt-10 rounded-xl border-r-4 border-purple-600 dark:bg-white dark:border-r-4 dark:border-orange-400">
             <a href={value.linkVisit} target="_blank" className="flex flex-col cursor-pointer hover:bg-transparent">
-              <img src={value.image} alt="project's image" className="max-h-[316px] w-full rounded-xl" />
-              <span className="cursor-pointer bg-purple-600/80 px-[280px] py-[158px] -mt-[316px] hover:bg-transparent transition-all duration-450 ease-linear rounded-xl dark:bg-orange-400/80 dark:hover:bg-transparent"></span>
+              <img src={value.image} alt="project's image" className="max-h-[316px] w-full lg:w-[100vw] sm:w-[100vw] rounded-xl lg:rounded-b-none" />
+              <span className="md:hidden cursor-pointer bg-purple-600/80 px-[280px] py-[158px] -mt-[316px] hover:bg-transparent transition-all duration-450 ease-linear rounded-xl lg:rounded-b-none dark:bg-orange-400/80 dark:hover:bg-transparent"></span>
             </a>
 
-            <div className="space-y-5 w-full m-auto px-5">
+            <div className="flex flex-wrap flex-col space-y-5 w-full sm:max-w-[22rem] m-auto px-5 sm:px-0 lg:my-5">
               <h1 className="text-2xl font-bold dark:text-purple-900">
                 {value.title}
               </h1>
               <p className="font-Roboto text-lg text-gray-400 dark:text-gray-400">
                 {value.subtitle}
               </p>
-              <ul className="flex font-Roboto text-gray-400 text-sm space-x-5 dark:text-purple-900">
+              <ul className="flex font-Roboto text-gray-400 text-sm space-x-5 sm:space-x-3 dark:text-purple-900">
                 <li>{value.tech_pri}</li>
                 <li>{value.tech_sec}</li>
                 <li>{value.tech_third}</li>

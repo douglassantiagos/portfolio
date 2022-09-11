@@ -15,7 +15,7 @@ export const data = {
   IGNEWS: {
     image: "./ignews-photo.png",
     title: "Ignews",
-    subtitle: "O ignews é um blog de conteúdos com status de assinatura. O blog possui um sistema de compra integrado com STRIPE. Ao realizar o pagamento, a inscrição estará ativa para acesso completo do blog. Caso contrário, o usuário terá acesso limitado aos conteúdos.",
+    subtitle: "O ignews é um blog de conteúdos com um sistema de compra integrado com STRIPE. Ao realizar o pagamento, a inscrição estará ativa para acesso completo do blog. Caso contrário, o usuário terá acesso limitado aos conteúdos.",
     tech_pri: "Typescript",
     tech_sec: "React",
     tech_third: "Next.js",
@@ -30,7 +30,7 @@ export const data = {
   JOBSCALC: {
     image: "./jobscalc-photo.png",
     title: "JobsCalc",
-    subtitle: "O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa de custo de cada job. Além disso, é possível traçar o valor da hora da pessoa que estará usando o sistema.",
+    subtitle: "O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa de custo de cada job.",
     tech_pri: "Javascript",
     tech_sec: "NodeJS",
     tech_third: "EJS",

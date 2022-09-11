@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { Moon, Sun } from "phosphor-react";
-import { Link } from 'react-router-dom';
+import { List, Moon, Sun } from "phosphor-react";
 
 import { Button } from "./Button";
 import { Logo } from "./Logo";
@@ -10,7 +10,14 @@ import { ActiveLink } from "./ActiveLink";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  
   const { theme, setTheme } = useTheme();
+  const scrollPosition = useScrollPosition();
+
+  const handleOpenDrawer = () => {
+    setIsOpen(isOpen => !isOpen)   
+  }
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -42,20 +49,101 @@ export function Header() {
         delay: 1.1,
       },
     },
-  }
-
-  const scrollPosition = useScrollPosition();
-  console.log(scrollPosition)
+  }   
 
   return (
     <>
+      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-10 space-y-5">
+        <section className='flex items-center justify-end w-full space-x-5 pr-7 sm:pr-3 '>
+          <Button title='Resume' />
+
+          <button className="mr-8 sm:mr-4 h-min m-auto p-2" onClick={handleOpenDrawer}>
+            <List size={40} />
+          </button>
+        </section>
+
+        <div className={isOpen ? "block max-w-full bg-slate-800 dark:bg-transparent shadow-lg dark:border dark:border-purple-900 rounded-xl space-y-5 p-4 mx-10 sm:mx-6" : "hidden"}>         
+          <ul>
+            <li>
+              <a href="#Home" className="block py-1 pr-4 pl-3 text-purple-600 hover:text-white dark:hover:text-white hover:bg-purple-900/50 dark:hover:bg-orange-600/40 dark:text-purple-900 rounded">Home</a>
+            </li>
+            <li>
+              <a href="#about" className="block py-1 pr-4 pl-3 text-purple-600 hover:text-white dark:hover:text-white hover:bg-purple-900/50 dark:hover:bg-orange-600/40 dark:text-purple-900 rounded">About</a>
+            </li>
+            <li>
+              <a href="#projects" className="block py-1 pr-4 pl-3 text-purple-600 hover:text-white dark:hover:text-white hover:bg-purple-900/50 dark:hover:bg-orange-600/40 dark:text-purple-900 rounded">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" className="block py-1 pr-4 pl-3 text-purple-600 hover:text-white dark:hover:text-white hover:bg-purple-900/50 dark:hover:bg-orange-600/40 dark:text-purple-900 rounded">Contact</a>
+            </li>
+          </ul>
+
+          <li className="block w-full h-[0.5px] m-auto bg-purple-900"></li>
+
+          <section className='flex items-center justify-between'>
+            <ul className="flex items-center space-x-5 pl-3">          
+              <li>
+                <a href="https://github.com/douglassantiagos" target="_blank">
+                  <abbr title="GitHub">
+                    <FiGithub 
+                      size={22} 
+                      className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
+                    />
+                  </abbr>
+                </a>          
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/douglas-santiago-607838192/" target="_blank">
+                  <abbr title="Linkedin">
+                    <FiLinkedin 
+                      size={22} 
+                      className={scrollPosition > 375 && scrollPosition < 2226 ?  "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
+                    />
+                  </abbr>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/osantiagods/" target="_blank">
+                  <abbr title="Instagram">
+                    <FiInstagram
+                      size={22} 
+                      className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
+                    />
+                  </abbr>
+                </a>
+              </li>              
+            </ul>
+
+            { theme === "light" ? (
+              <button
+                type="button"
+                className="border-2 rounded-full p-2 "
+                onClick={() => setTheme("dark")}
+              >
+                <Moon weight="fill" size={20} color={'white'} className="" />
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="bg-transparent border-2 border-yellow rounded-full p-2 "
+                onClick={() => setTheme("light")}
+              >
+                <Sun weight="fill" size={20} color={'yellow'} className="" />
+              </button>
+            )}
+
+          </section>
+
+        </div>
+      </nav>
+
       <Logo />       
 
       <motion.header
         variants={container}
         initial="hidden"
         animate="visible"
-        className="fixed top-1/2 left-40"
+        className="md:hidden fixed top-[50vh] left-40 2xl:left-24 lg:left-14"
       >
         <ul className="space-y-5">          
           <motion.li variants={item}>
@@ -96,12 +184,12 @@ export function Header() {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="fixed flex flex-col items-center m-auto right-44 h-full"
+        className="md:hidden fixed flex flex-col items-center right-44 2xl:right-28 lg:right-28"
       >
         { theme === "light" ? (
           <button
             type="button"
-            className="fixed border-2 rounded-full p-2 top-12"
+            className="fixed border-2 rounded-full p-2 top-10"
             onClick={() => setTheme("dark")}
           >
             <Moon weight="fill" size={24} color={'white'} className="" />
@@ -109,36 +197,24 @@ export function Header() {
         ) : (
           <button
             type="button"
-            className="fixed bg-transparent border-2 border-yellow rounded-full p-2 top-12"
+            className="fixed bg-transparent border-2 border-yellow rounded-full p-2 top-10"
             onClick={() => setTheme("light")}
           >
             <Sun weight="fill" size={24} color={'yellow'} className="" />
           </button>
         )}
 
-        <ul className="fixed flex flex-col space-y-24 items-center top-1/4">
-          <ActiveLink 
-            href="#home" 
-            className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}
-          >
+        <ul className="fixed flex flex-col space-y-24 items-center top-[20vh]">
+          <ActiveLink href="#home" className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Home
           </ActiveLink>
-          <ActiveLink 
-            href="#about"
-            className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}            
-          >
+          <ActiveLink href="#about" className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
             About
           </ActiveLink>
-          <ActiveLink 
-            href="#projects"
-            className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}                   
-          >
+          <ActiveLink href="#projects" className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Projects            
           </ActiveLink>
-          <ActiveLink 
-            href="#contact"
-            className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}                   
-          >
+          <ActiveLink href="#contact" className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Contact
           </ActiveLink>
 

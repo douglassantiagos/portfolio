@@ -25,16 +25,16 @@ export function About() {
       id="about"
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }} 
-      className="flex flex-col min-h-screen justify-center items-center space-y-20 min-w-full m-auto dark:bg-slate-100 "
+      viewport={{ once: true, amount: 0.5 }} 
+      className="flex flex-col min-h-screen justify-center items-center min-w-full m-auto dark:bg-slate-100"
     >
-      <motion.div variants={Variants} className=" flex flex-col items-center justify-center space-y-5 dark:bg-white dark:rounded-xl shadow-xl rounded-xl border-r-4 border-purple-600 dark:border-r-4 dark:border-orange-400" >
-        <div className=" flex items-center justify-center space-x-10 py-10">
-          <img src="./me2.jpg" className="w-80 h-80 rounded-full hover:scale-105 hover:border-4 border-2 dark:border-4 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
-          <div className="flex flex-col items-start justify-center max-w-xl">
+      <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white dark:rounded-xl shadow-xl rounded-xl border-r-4 border-purple-600 dark:border-r-4 dark:border-orange-400" >
+        <div className=" flex xl:flex-col items-center justify-center space-x-10 lg:space-y-5 py-10">
+          <img src="./me2.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-full hover:scale-105 hover:border-4 border-2 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
+          <section className="flex flex-col items-start justify-center max-w-xl sm:w-full">
             <Title title="About Me" />
 
-            <p className="font-Roboto text-lg text-gray-400 text-justify leading-8 mt-8 dark:text-gray-400">
+            <p className="font-Roboto text-lg sm:w-[80vw] text-gray-400 text-justify leading-8 mt-8 dark:text-gray-400">
               My name is Douglas Santiago. I'm front-end developer from Rio de Janeiro, Brazil. <br/>
               I started my journey in technology in the year 2019 in college, but my interest in web development started back in 2021, when I 
               developed my first application call
@@ -45,16 +45,46 @@ export function About() {
               </a>. Application created to manager freelancer jobs. <br/>          
               Currently, I'm specializing in building awesome digital experience with current web development technologies.   
             </p>
-          </div>    
+          </section>    
         </div>
 
-        <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 min-w-[70rem]">
-          <li><SiJavascript size={80} className="animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiTypescript size={80} className="animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiReact size={80} className="animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiHtml5 size={80} className="animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiCss3 size={80} className="animate-bounce hover:animate-none dark:text-orange-400" /></li>
+        <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 sm:space-x-4 min-w-[70rem]">
+          <li><SiJavascript className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
+          <li><SiTypescript className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
+          <li><SiReact className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
+          <li><SiHtml5 className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
+          <li><SiCss3 className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
         </motion.ul> 
+      </motion.div>
+
+
+      <motion.div 
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }} 
+        className="sm:flex sm:items-center sm:justify-center w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 xl:mt-0"
+      >
+        <motion.h1 variants={Variants} className="text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1> 
+      </motion.div>
+
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.6 }} 
+        className="sm:flex sm:flex-col sm:items-center grid grid-rows-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col xl:grid-flow-row gap-4 sm:gap-8 dark:bg-slate-100 w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-8 xl:mb-10"
+      >
+        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-xl">
+          <h1>Last Graduation Period of Information System</h1>
+        </motion.section>
+        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-xl">
+          <h1>Web Development Course With ReactJS</h1>
+        </motion.section>
+        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-xl">
+          <h1>Intermediary English</h1>
+        </motion.section>
+        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-xl">
+          <h1>Professional Remote Work and Virtual Collaboration Certification</h1>
+        </motion.section>
       </motion.div>
     </motion.div>
   )

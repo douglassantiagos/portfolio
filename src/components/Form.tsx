@@ -7,7 +7,7 @@ export function Form() {
   const [isSendingMessage, setIsSendingMessage] = useState(false);
 
   return (
-    <form action="https://formsubmit.co/97613ae2a3beee36a70a74db8fa18e36" method="POST" onSubmit={() => setIsSendingMessage(true)} className="flex flex-col w-[600px] pt-3">
+    <form action="https://formsubmit.co/97613ae2a3beee36a70a74db8fa18e36" method="POST" onSubmit={() => setIsSendingMessage(true)} className="flex flex-col w-[600px] sm:w-full pt-3">
       <label className="text-white">Name</label>
       <input 
         type="text" 
