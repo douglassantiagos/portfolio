@@ -55,7 +55,7 @@ export function Header() {
     <>
       <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-10 space-y-5">
         <section className='flex items-center justify-end w-full space-x-5 pr-7 sm:pr-3 '>
-          <Button title='Resume' />
+          <Button title='Resume' href={'resume.pdf'} />
 
           <button className="mr-8 sm:mr-4 h-min m-auto p-2" onClick={handleOpenDrawer}>
             <List size={40} />
@@ -219,7 +219,7 @@ export function Header() {
           </ActiveLink>
 
           <motion.li variants={itemNav}>
-            <Button title='Resume' />
+            <Button title='Resume' href={'resume.pdf'} />
           </motion.li>
         </ul>
       </motion.header>

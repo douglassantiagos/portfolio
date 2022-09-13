@@ -2,7 +2,7 @@ export const data = {
   POKEDEX: {
     image: "./pokedex-photo.png",
     title: "Pokedex Project",
-    subtitle: "Aplicação com informações detalhadas de todos os pokemons do universo pokemon. Aplicação responsiva desenvolvido para web consumindo uma API externa.",
+    subtitle: "Application with all the pokemons details of the pokemon universe. Responsive application developed for web consuming an external API.",
     tech_pri: "Typescript",
     tech_sec: "React",
     tech_third: "ChakraUI",
@@ -15,7 +15,7 @@ export const data = {
   IGNEWS: {
     image: "./ignews-photo.png",
     title: "Ignews",
-    subtitle: "O ignews é um blog de conteúdos com um sistema de compra integrado com STRIPE. Ao realizar o pagamento, a inscrição estará ativa para acesso completo do blog. Caso contrário, o usuário terá acesso limitado aos conteúdos.",
+    subtitle: "Ignews is a content blog with a purchase system integrated with STRIPE. Upon payment, the subscription will be active for full access to the blog. Otherwise, the user will have limited access to the contents.",
     tech_pri: "Typescript",
     tech_sec: "React",
     tech_third: "Next.js",
@@ -30,7 +30,7 @@ export const data = {
   JOBSCALC: {
     image: "./jobscalc-photo.png",
     title: "JobsCalc",
-    subtitle: "O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa de custo de cada job.",
+    subtitle: "JobsCalc is a calculation website for freelance projects, which aims to register and exclude jobs (projects), obtaining a cost estimate for each job.",
     tech_pri: "Javascript",
     tech_sec: "NodeJS",
     tech_third: "EJS",
@@ -44,7 +44,7 @@ export const data = {
   WORLDTRIP: {
     image: "./layout-worldtrip.png",
     title: "WorldTrip",
-    subtitle: "Desafio com objetivo de desenvolver uma landing page web responsiva contando a história de cada continente com tecnologias atuais como react e next.js",
+    subtitle: "Ignite course challenge to create a responsive landing page, with current technologies such as react and next.js. The website tells stories and their curiosities from each continent.",
     tech_pri: "Typescript",
     tech_sec: "Next.js",
     tech_third: "React",
@@ -58,7 +58,7 @@ export const data = {
   WIDGETFEEDBACK: {
     image: "./widget-feedback.png",
     title: "Widget Feedback",
-    subtitle: "Projeto desenvolvido no evento Next Level Week - Return Impulse, da Rocketseat. Aplicação para receber um feedbacks pelo widget sobre o site.",
+    subtitle: "This project was developed at Next Level Week - Return Impulse event, by Rocketseat. The Application was created to send feedbacks about website developed from a widget.",
     tech_pri: "Typescript",
     tech_sec: "React",
     tech_third: "Tailwindcss",
