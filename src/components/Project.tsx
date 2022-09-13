@@ -29,7 +29,7 @@ export function Project({ data }: ProjectProps) {
                 {value.title}
               </h1>
               <p className="font-Roboto text-lg text-gray-400 dark:text-gray-400">
-                {value.subtitle}
+                {value.description}
               </p>
               <ul className="flex font-Roboto text-gray-400 text-sm space-x-5 sm:space-x-3 dark:text-purple-900">
                 <li>{value.tech_pri}</li>
