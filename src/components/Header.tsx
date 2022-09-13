@@ -6,7 +6,6 @@ import { List, Moon, Sun } from "phosphor-react";
 import { Button } from "./Button";
 import { Logo } from "./Logo";
 import { useTheme } from "../hooks/useTheme";
-import { ActiveLink } from "./ActiveLink";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
 export function Header() {
@@ -205,18 +204,18 @@ export function Header() {
         )}
 
         <ul className="fixed flex flex-col space-y-24 items-center top-[20vh]">
-          <ActiveLink href="#home" className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          <a href="#home" className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Home
-          </ActiveLink>
-          <ActiveLink href="#about" className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          </a>
+          <a href="#about" className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
             About
-          </ActiveLink>
-          <ActiveLink href="#projects" className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          </a>
+          <a href="#projects" className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Projects            
-          </ActiveLink>
-          <ActiveLink href="#contact" className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          </a>
+          <a href="#contact" className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
             Contact
-          </ActiveLink>
+          </a>
 
           <motion.li variants={itemNav}>
             <Button title='Resume' href={'resume.pdf'} />
