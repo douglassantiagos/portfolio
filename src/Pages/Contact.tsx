@@ -28,7 +28,7 @@ export function Contact() {
       viewport={{ once: true, amount: 0.6 }} 
       className="flex flex-col min-h-screen max-auto 2xl:mt-10 items-center justify-center space-y-5 dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"
     >
-      <motion.div variants={Variants}  className="flex flex-col flex-wrap sm:max-w-sm items-center justify-center space-y-5 md:my-32 shadow-xl p-10 sm:p-4 dark:border-r-4 dark:border-white rounded-xl border-r-4 border-purple-600">
+      <motion.div variants={Variants}  className="flex flex-col flex-wrap sm:max-w-sm items-center justify-center space-y-5 md:my-32 p-10 sm:p-4 border-[1px] dark:border-white rounded-xl border-purple-600">
         <h1 className="text-purple-600 text-5xl font-bold dark:text-white">
           Get In Touch
         </h1>

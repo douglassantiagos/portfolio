@@ -52,7 +52,7 @@ export function Header() {
 
   return (
     <>
-      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-10 space-y-5">
+      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-5 space-y-5">
         <section className='flex items-center justify-end w-full space-x-5 pr-7 sm:pr-3 '>
           <Button title='Resume' href={'resume.pdf'} />
 
