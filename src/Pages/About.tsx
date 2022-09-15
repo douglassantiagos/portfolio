@@ -25,7 +25,7 @@ export function About() {
       id="about"
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }} 
+      viewport={{ once: true, amount: 0.3 }} 
       className="flex flex-col min-h-screen justify-center items-center min-w-full m-auto dark:bg-white"
     >
       <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white dark:rounded-xl rounded-xl border-[1px] border-purple-600 dark:border-orange-400" >
