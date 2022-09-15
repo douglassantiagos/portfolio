@@ -71,7 +71,7 @@ export function About() {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.6 }} 
-        className="sm:flex sm:flex-col sm:items-center grid grid-rows-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col xl:grid-flow-row gap-4 sm:gap-8 dark:bg-slate-100 w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-8 xl:mb-10"
+        className="sm:flex sm:flex-col sm:items-center grid grid-rows-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col xl:grid-flow-row gap-4 sm:gap-8 dark:bg-white w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-8 xl:mb-10"
       >
         <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-lg">
           <h1>Last Graduation Period of Information System</h1>
