@@ -41,7 +41,7 @@ export function Form() {
         name="message"
         onChange={event => setComment(event.target.value)}          
         rows={5}
-        className=" mt-2 rounded-md shadow-sm p-2 text-white font-Roboto focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 bg-transparent border-[1px] border-gray-400 dark:focus:ring-2 dark:text-purple-900 dark:bg-white dark:border-white dark:focus:ring-purple-900 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+        className="mt-2 rounded-md shadow-sm p-2 text-white font-Roboto focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 bg-transparent border-[1px] border-gray-400 dark:focus:ring-2 dark:text-purple-900 dark:bg-white dark:border-white dark:focus:ring-purple-900 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
       />
 
       <input type="hidden" name="_next" value="http://127.0.0.1:5173/success.html" />

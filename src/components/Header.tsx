@@ -52,12 +52,12 @@ export function Header() {
 
   return (
     <>
-      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-5 space-y-5">
+      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-6 space-y-5">
         <section className='flex items-center justify-end w-full space-x-5 pr-7 sm:pr-3 '>
           <Button title='Resume' href={'resume.pdf'} />
 
           <button className="mr-8 sm:mr-4 h-min m-auto p-2" onClick={handleOpenDrawer}>
-            <List size={40} />
+            <List size={32} />
           </button>
         </section>
 
@@ -85,7 +85,7 @@ export function Header() {
                 <a href="https://github.com/douglassantiagos" target="_blank">
                   <abbr title="GitHub">
                     <FiGithub 
-                      size={22} 
+                      size={20} 
                       className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                     />
                   </abbr>
@@ -95,7 +95,7 @@ export function Header() {
                 <a href="https://www.linkedin.com/in/douglas-santiago-607838192/" target="_blank">
                   <abbr title="Linkedin">
                     <FiLinkedin 
-                      size={22} 
+                      size={20} 
                       className={scrollPosition > 375 && scrollPosition < 2226 ?  "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                     />
                   </abbr>
@@ -105,7 +105,7 @@ export function Header() {
                 <a href="https://www.instagram.com/osantiagods/" target="_blank">
                   <abbr title="Instagram">
                     <FiInstagram
-                      size={22} 
+                      size={20} 
                       className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                     />
                   </abbr>
@@ -149,7 +149,7 @@ export function Header() {
             <a href="https://github.com/douglassantiagos" target="_blank">
               <abbr title="GitHub">
                 <FiGithub 
-                  size={22} 
+                  size={20} 
                   className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
@@ -159,7 +159,7 @@ export function Header() {
             <a href="https://www.linkedin.com/in/douglas-santiago-607838192/" target="_blank">
               <abbr title="Linkedin">
                 <FiLinkedin 
-                  size={22} 
+                  size={20} 
                   className={scrollPosition > 375 && scrollPosition < 2226 ?  "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
@@ -169,7 +169,7 @@ export function Header() {
             <a href="https://www.instagram.com/osantiagods/" target="_blank">
               <abbr title="Instagram">
                 <FiInstagram
-                  size={22} 
+                  size={20} 
                   className={scrollPosition > 375 && scrollPosition < 2226 ? "cursor-pointer text-white dark:text-orange-400 hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900" : "cursor-pointer text-white hover:animate-bounce hover:text-purple-600 dark:hover:text-purple-900"} 
                 />
               </abbr>
@@ -188,7 +188,7 @@ export function Header() {
         { theme === "light" ? (
           <button
             type="button"
-            className="fixed border-2 rounded-full p-2 top-10"
+            className="fixed border-2 rounded-full p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
             onClick={() => setTheme("dark")}
           >
             <Moon weight="fill" size={24} color={'white'} className="" />
@@ -196,7 +196,7 @@ export function Header() {
         ) : (
           <button
             type="button"
-            className="fixed bg-transparent border-2 border-yellow rounded-full p-2 top-10"
+            className="fixed bg-transparent border-2 border-yellow rounded-full p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
             onClick={() => setTheme("light")}
           >
             <Sun weight="fill" size={24} color={'yellow'} className="" />
@@ -204,16 +204,16 @@ export function Header() {
         )}
 
         <ul className="fixed flex flex-col space-y-24 items-center top-[20vh]">
-          <a href="#home" className={scrollPosition < 800 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          <a href="#home" className={scrollPosition < 800 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-purple-600/70 transition-all duration-450 ease-linear'}>
             Home
           </a>
-          <a href="#about" className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          <a href="#about" className={scrollPosition >= 800 && scrollPosition < 1600 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-purple-600/70 transition-all duration-450 ease-linear'}>
             About
           </a>
-          <a href="#projects" className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-orange-400' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          <a href="#projects" className={scrollPosition >= 1600 && scrollPosition < 2400 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-purple-600/70 transition-all duration-450 ease-linear'}>
             Projects            
           </a>
-          <a href="#contact" className={scrollPosition >= 2400 ? 'text-white transition-all duration-450 ease-linear dark:text-white' : 'rotate-90 transition-all duration-450 ease-linear'}>
+          <a href="#contact" className={scrollPosition >= 2400 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-purple-600/70 transition-all duration-450 ease-linear'}>
             Contact
           </a>
 

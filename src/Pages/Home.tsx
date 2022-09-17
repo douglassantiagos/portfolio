@@ -82,7 +82,7 @@ export function Home() {
           <h1 className="text-4xl font-extrabold 2xl:text-2xl xl:text-xl">FRONT-END DEVELOPER</h1>
         </motion.section>
 
-        <motion.section variants={imageVariants} className="flex items-center justify-center w-full pb-20 shadow-xl rounded-xl">
+        <motion.section variants={imageVariants} className="flex items-center justify-center w-full pb-20 shadow-lg rounded-xl">
           <img className="w-full rounded-b-full drop-shadow-xl" src="./avatar.png" />
         </motion.section>        
       </motion.div>

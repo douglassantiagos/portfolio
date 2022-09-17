@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export function Button({ title, href, onClick, ...rest }: ButtonProps) {
   return (
-    <a href={href} onClick={onClick} target="_blank" className="cursor-pointer flex items-center space-x-2 px-4 py-2 border-2 rounded-xl shadow-md text-purple-600 border-purple-600 hover:bg-purple-600/10 transition-all duration-450 ease-linear dark:border-purple-900 dark:text-purple-900 dark:hover:bg-purple-900/20" {...rest}>
+    <a href={href} onClick={onClick} target="_blank" className="cursor-pointer flex items-center space-x-2 px-4 py-2 border-2 bg-purple-600 rounded-xl shadow-md text-sm text-purple-900 border-purple-600 hover:bg-transparent hover:text-purple-600 transition-all duration-450 ease-linear dark:bg-purple-900 dark:text-white dark:border-purple-900 dark:hover:text-purple-900 dark:hover:bg-transparent" {...rest}>
       <span>{title}</span>
     </a>
   )

@@ -8,9 +8,8 @@ interface ButtonProps {
 
 export function ButtonIcon({ title, href }: ButtonProps) {
   return (
-    <a href={href} target="_blank" className="cursor-pointer flex items-center space-x-2 max-w-min px-4 py-2 border-2 rounded-xl border-purple-600 hover:bg-purple-600/10 transition-all duration-450 ease-linear dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-400/20 ">
+    <a href={href} target="_blank" className="cursor-pointer flex items-center max-w-min rounded-lg hover:text-white transition-all duration-450 ease-linear dark:text-orange-400 dark:hover:text-purple-900 ">
       {title == 'Visit' ? <FiExternalLink size={20} /> : <FiGithub size={20} />}
-      <span>{title}</span>
     </a>
   )
 }

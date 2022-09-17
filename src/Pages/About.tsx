@@ -28,13 +28,13 @@ export function About() {
       viewport={{ once: true, amount: 0.3 }} 
       className="flex flex-col min-h-screen justify-center items-center min-w-full m-auto dark:bg-white"
     >
-      <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white dark:rounded-xl rounded-xl border-[1px] border-purple-600 dark:border-orange-400" >
+      <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white" >
         <div className=" flex xl:flex-col items-center justify-center space-x-10 lg:space-y-5 py-10">
           <img src="./me2.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-l-[10rem] rounded-tr-[10rem] hover:scale-105 hover:border-4 border-2 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
           <section className="flex flex-col items-start justify-center max-w-xl sm:w-full">
             <Title title="About Me" />
 
-            <p className="font-Roboto text-lg sm:w-[80vw] text-gray-400 text-justify leading-8 mt-8 dark:text-gray-600">
+            <p className="font-Roboto text-base sm:w-[80vw] text-gray-400 text-justify leading-8 mt-8 dark:text-gray-600">
               My name is Douglas Santiago. I'm front-end developer from Rio de Janeiro, Brazil. <br/>
               I started my journey in technology in the year 2019 in college, but my interest in web development started back in 2021, when I 
               developed my first application call
