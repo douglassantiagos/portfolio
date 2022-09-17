@@ -42,7 +42,7 @@ export function Home() {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.6 }}
-        className="min-md:hidden w-full min-h-screen mt-16 m-auto dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"    
+        className="min-md:hidden w-full min-h-screen md:min-h-max py-20 m-auto dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"    
       >
         <motion.div variants={Variants} className="flex flex-col space-y-4 sm:space-y-10 w-[90vw] m-auto" >
           <motion.section variants={imageVariants} className="flex items-center justify-center -mt-5 ">

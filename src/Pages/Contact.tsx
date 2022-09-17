@@ -25,8 +25,8 @@ export function Contact() {
       id="contact" 
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }} 
-      className="flex flex-col min-h-screen max-auto 2xl:mt-10 items-center justify-center space-y-5 dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"
+      viewport={{ once: true, amount: 0.4 }} 
+      className="flex flex-col min-h-screen max-auto items-center justify-center space-y-5 dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"
     >
       <motion.div variants={Variants}  className="flex flex-col flex-wrap sm:max-w-sm items-center justify-center space-y-5 md:my-32 p-10 sm:p-4  dark:border-white rounded-xl border-purple-600">
         <h1 className="text-purple-600 text-5xl font-bold dark:text-white">

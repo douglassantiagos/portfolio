@@ -52,7 +52,7 @@ export function Header() {
 
   return (
     <>
-      <nav className="min-md:hidden w-full bg-transparent m-auto flex flex-col item-center justify-end mt-6 space-y-5">
+      <nav className="min-md:hidden w-full m-auto flex flex-col item-center justify-end mt-6 space-y-5">
         <section className='flex items-center justify-end w-full space-x-5 pr-7 sm:pr-3 '>
           <Button title='Resume' href={'resume.pdf'} />
 
@@ -61,7 +61,7 @@ export function Header() {
           </button>
         </section>
 
-        <div className={isOpen ? "block max-w-full bg-slate-800 dark:bg-transparent shadow-lg dark:border dark:border-purple-900 rounded-xl space-y-5 p-4 mx-10 sm:mx-6" : "hidden"}>         
+        <div className={isOpen ? "block max-w-full bg-slate-800 dark:bg-transparent shadow-md dark:border dark:border-purple-900 rounded-xl space-y-5 p-4 mx-10 sm:mx-6" : "hidden"}>         
           <ul>
             <li>
               <a href="#Home" className="block py-1 pr-4 pl-3 text-purple-600 hover:text-white dark:hover:text-white hover:bg-purple-900/50 dark:hover:bg-orange-600/40 dark:text-purple-900 rounded">Home</a>
@@ -132,7 +132,6 @@ export function Header() {
             )}
 
           </section>
-
         </div>
       </nav>
 
