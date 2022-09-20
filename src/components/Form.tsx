@@ -44,7 +44,7 @@ export function Form() {
         className="mt-2 rounded-md shadow-sm p-2 text-white font-Roboto focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 bg-transparent border-[1px] border-gray-400 dark:focus:ring-2 dark:text-purple-900 dark:bg-white dark:border-white dark:focus:ring-purple-900 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
       />
 
-      <input type="hidden" name="_next" value="/Success" />
+      <input type="hidden" name="_next" value="https://douglassantiago.vercel.app/success"/>
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
 
@@ -54,16 +54,15 @@ export function Form() {
           value="Enviar"
           disabled={comment.length === 0 || isSendingMessage}
           className="flex items-center p-2 text-white bg-purple-600 rounded-lg text-sm hover:bg-transparent hover:ring-2 hover:ring-purple-600 transition-all duration-450 ease-linear disabled:opacity-50 hover:disabled:bg-purple-600 hover:disabled:ring-0 hover:disabled:cursor-not-allowed dark:bg-purple-900 dark:text-white dark:hover:bg-transparent dark:hover:text-purple-900 dark:hover:ring-black dark:hover:disabled:bg-purple-900 dark:hover:disabled:text-white"
-        >
-          
+        > 
           { isSendingMessage
             ? <Loading /> 
             : 
-            <>
+            <span className="flex items-center">
               <EnvelopeSimple weight="bold" className="mr-1 w-4 h-4" />
               Send Message
-            </>
-          }
+            </span>
+          }     
         </button>
       </footer>
     </form>

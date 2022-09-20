@@ -22,6 +22,5 @@ export function Success() {
         </button>
       </div>
     </div>
-
   )
 }
