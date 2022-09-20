@@ -7,7 +7,7 @@ export function Form() {
   const [isSendingMessage, setIsSendingMessage] = useState(false);
 
   return (
-    <form action="https://formsubmit.co/97613ae2a3beee36a70a74db8fa18e36" method="POST" onSubmit={() => setIsSendingMessage(true)} className="flex flex-col w-[600px] sm:w-full pt-3">
+    <form action="https://formsubmit.co/97613ae2a3beee36a70a74db8fa18e36"  method="POST" onSubmit={() => setIsSendingMessage(true)} className="flex flex-col w-[600px] sm:w-full pt-3">
       <label className="text-white">Name</label>
       <input 
         type="text" 
@@ -44,7 +44,7 @@ export function Form() {
         className="mt-2 rounded-md shadow-sm p-2 text-white font-Roboto focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 bg-transparent border-[1px] border-gray-400 dark:focus:ring-2 dark:text-purple-900 dark:bg-white dark:border-white dark:focus:ring-purple-900 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
       />
 
-      <input type="hidden" name="_next" value="http://127.0.0.1:5173/success.html" />
+      <input type="hidden" name="_next" value="http://127.0.0.1:5173/Success" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
 

@@ -9,7 +9,9 @@ import ThemeContextProvider from './hooks/useTheme'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeContextProvider>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeContextProvider>
   </React.StrictMode>
 )
