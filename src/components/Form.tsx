@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { EnvelopeSimple } from "phosphor-react";
 import { Loading } from "./Loading";
+import { Link } from "react-router-dom";
 
 export function Form() {
   const [comment, setComment] = useState('');
@@ -57,11 +58,13 @@ export function Form() {
         > 
           { isSendingMessage
             ? <Loading /> 
-            : 
-            <span className="flex items-center">
-              <EnvelopeSimple weight="bold" className="mr-1 w-4 h-4" />
-              Send Message
-            </span>
+            :
+            <Link to='/success'>
+              <span className="flex items-center">
+                <EnvelopeSimple weight="bold" className="mr-1 w-4 h-4" />
+                Send Message
+              </span>
+            </Link> 
           }     
         </button>
       </footer>

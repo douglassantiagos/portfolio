@@ -15,7 +15,7 @@ function App() {
         </div>          
         } 
       />
-      <Route path="/success.html" element={<Success />} />
+      <Route path="/success" element={<Success />} />
     </Routes>    
   )
 }
