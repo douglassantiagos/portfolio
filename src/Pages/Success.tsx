@@ -3,7 +3,7 @@ import { Check, CheckCircle } from "phosphor-react";
 export function Success() {
   return (
     <div className="bg-[#171522]">
-      <div id="success" className="flex flex-col items-center justify-center h-[90vh] w-auto">
+      <div  className="flex flex-col items-center justify-center h-[90vh] w-auto">
         <section className="bg-purple-600 rounded-full p-1">
           <Check size={40} className="text-white" />
         </section>

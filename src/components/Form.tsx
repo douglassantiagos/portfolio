@@ -45,7 +45,7 @@ export function Form() {
         className="mt-2 rounded-md shadow-sm p-2 text-white font-Roboto focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 bg-transparent border-[1px] border-gray-400 dark:focus:ring-2 dark:text-purple-900 dark:bg-white dark:border-white dark:focus:ring-purple-900 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
       />
 
-      <input type="hidden" name="_next" value="http://127.0.0.1:5173/success"/>
+      <input type="hidden" name="_next" value="/success"/>
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
 
@@ -59,14 +59,10 @@ export function Form() {
           { isSendingMessage
             ? <Loading /> 
             :
-            setTimeout(() => {
-              <Link to='/success'>
-                <span className="flex items-center">
-                  <EnvelopeSimple weight="bold" className="mr-1 w-4 h-4" />
-                  Send Message
-                </span>
-              </Link>
-            }, 1000) 
+            <span className="flex items-center">
+              <EnvelopeSimple weight="bold" className="mr-1 w-4 h-4" />
+              Send Message
+            </span>
           }     
         </button>
       </footer>
