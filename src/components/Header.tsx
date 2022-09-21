@@ -217,7 +217,7 @@ export function Header() {
           </a>
 
           <motion.li variants={itemNav}>
-            <Button title='Resume' href={'resume.pdf'} />
+            <Button title='Resume' href={'resume.pdf'} target="_blank" />
           </motion.li>
         </ul>
       </motion.header>

@@ -1,25 +1,23 @@
-import { Check, CheckCircle } from "phosphor-react";
+import { Check } from "phosphor-react";
+import { Button } from "../components/Button";
 
 export function Success() {
   return (
-    <div className="bg-[#171522]">
-      <div  className="flex flex-col items-center justify-center h-[90vh] w-auto">
-        <section className="bg-purple-600 rounded-full p-1">
-          <Check size={40} className="text-white" />
+    <div className="flex min-h-screen items-center justify-center bg-purple-900 dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]">
+      <div className="flex flex-col items-center  space-y-6">
+        <section className="bg-purple-600 dark:bg-white rounded-full p-1">
+          <Check size={40} className="text-white dark:text-purple-900" />
         </section>
-        
-        <span className="text-2xl text-center mt-[1.25rem]">
+
+        <span className="text-2xl text-center">
           Thanks! <br />
           Your message was sent successfully
         </span>
-        <span className="text-[1.2rem] align-middle text-[#FEFCFF] my-4 ">      
-          I'll get back to you soon.
+        <span className="text-xl align-middle text-[#FEFCFF] my-4 ">      
+          I'll get back to you soon
         </span>
 
-        <button       
-          className="cursor-pointer flex items-center space-x-2 px-4 py-2 border-2 bg-purple-600 rounded-xl shadow-md text-sm text-purple-900 border-purple-600 hover:bg-transparent hover:text-purple-600 transition-all duration-450 ease-linear dark:bg-purple-900 dark:text-white dark:border-purple-900 dark:hover:text-purple-900 dark:hover:bg-transparent">
-          <a href="/" className="" >Back To Portfolio</a>
-        </button>
+        <Button href="/" title='Send Another Email' />
       </div>
     </div>
   )
