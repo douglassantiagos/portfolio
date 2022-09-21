@@ -12,7 +12,7 @@ export function Contact() {
   const [isSendingMessage, setIsSendingMessage] = useState(false);
   const [resultStatusMessage, setResultStatusMessage] = useState(0);
 
-  const form = useRef();
+  const form = useRef('');
 
   const sendEmail = async (e: any) => {
     setIsSendingMessage(true);
