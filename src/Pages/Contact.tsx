@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { LegacyRef, useRef } from 'react';
 import { motion, Variants } from "framer-motion";
 import { useState } from "react";
 import { EnvelopeSimple } from "phosphor-react";
@@ -12,7 +12,7 @@ export function Contact() {
   const [isSendingMessage, setIsSendingMessage] = useState(false);
   const [resultStatusMessage, setResultStatusMessage] = useState(0);
 
-  const form = useRef('');
+  const form = useRef<MutableRefObject<Object>>('');
 
   const sendEmail = async (e: any) => {
     setIsSendingMessage(true);
