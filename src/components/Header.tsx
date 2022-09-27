@@ -203,16 +203,16 @@ export function Header() {
         )}
 
         <ul className="fixed flex flex-col space-y-24 items-center top-[20vh]">
-          <a href="#home" className={scrollPosition < 600 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-white transition-all duration-450 ease-linear'}>
+          <a href="#home" className={scrollPosition < 600 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-white dark:hover:text-orange-300 transition-all duration-450 ease-linear'}>
             Home
           </a>
-          <a href="#about" className={scrollPosition >= 600 && scrollPosition < 1400 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-white transition-all duration-450 ease-linear'}>
+          <a href="#about" className={scrollPosition >= 600 && scrollPosition < 1400 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-white dark:hover:text-orange-300 transition-all duration-450 ease-linear'}>
             About
           </a>
-          <a href="#projects" className={scrollPosition >= 1400 && scrollPosition < 2300 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-white transition-all duration-450 ease-linear'}>
+          <a href="#projects" className={scrollPosition >= 1400 && scrollPosition < 2300 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-orange-400' : 'text-sm rotate-90 hover:text-white dark:hover:text-orange-300 transition-all duration-450 ease-linear'}>
             Projects            
           </a>
-          <a href="#contact" className={scrollPosition >= 2300 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-white transition-all duration-450 ease-linear'}>
+          <a href="#contact" className={scrollPosition >= 2300 ? 'text-white text-sm transition-all duration-450 ease-linear dark:text-white' : 'text-sm rotate-90 hover:text-white dark:hover:text-orange-300 transition-all duration-450 ease-linear'}>
             Contact
           </a>
 
