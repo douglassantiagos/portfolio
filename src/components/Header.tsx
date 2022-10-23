@@ -187,7 +187,7 @@ export function Header() {
         { theme === "light" ? (
           <button
             type="button"
-            className="fixed border-2 rounded-full p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
+            className="fixed border-2 rounded-full border-t-black border-l-black  p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
             onClick={() => setTheme("dark")}
           >
             <Moon weight="fill" size={24} color={'white'} className="" />
@@ -195,7 +195,7 @@ export function Header() {
         ) : (
           <button
             type="button"
-            className="fixed bg-transparent border-2 border-yellow rounded-full p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
+            className="fixed bg-transparent border-2 border-yellow border-b-purple-900/50 border-r-purple-900/50 rounded-full p-2 top-10 hover:scale-105 transition-all duration-450 ease-linear"
             onClick={() => setTheme("light")}
           >
             <Sun weight="fill" size={24} color={'yellow'} className="" />

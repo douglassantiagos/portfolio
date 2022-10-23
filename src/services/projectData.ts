@@ -40,6 +40,20 @@ export const data = {
     className: "flex flex-row space-x-4 shadow-xl rounded-xl mt-20",
   },
 
+  TODOLIST: {
+    image: "./todolist.png",
+    title: "ToDo",
+    description: "Todo is a to-do list-style task control application, which contains the following functionalities as add and remove a new task from the listing, mark and unmark a task as complete and show task completion progress.",
+    tech_pri: "Typescript",
+    tech_sec: "React",
+    tech_third: "Vite",
+    tech_fourth: "HTML",
+    tech_fifth: "CSS",
+    linkVisit: "https://projecttodolist.vercel.app/",
+    linkGithub: "https://github.com/douglassantiagos/desafio_todo_list_reactjs",
+    className: "flex flex-row-reverse space-x-4 shadow-xl rounded-xl mt-20",
+  },
+
   WORLDTRIP: {
     image: "./layout-worldtrip.png",
     title: "WorldTrip",

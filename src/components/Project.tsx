@@ -12,7 +12,7 @@ export function Project({ data }: ProjectProps) {
   
   const handleShowMoreProjects = () => {
     setAmountProjects(limitAmount += 9)
-  }  
+  }
 
   return (
     <div className="flex flex-col mt-10"> 

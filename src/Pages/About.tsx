@@ -1,7 +1,8 @@
-import { SiJavascript, SiTypescript, SiReact, SiHtml5, SiCss3 } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiReact, SiHtml5, SiCss3, SiGit } from "react-icons/si";
 import { motion, Variants } from "framer-motion";
 
 import { Title } from "../components/Title";
+import { CircleWavyCheck, Code, GitBranch, GitCommit, GlobeHemisphereWest, GraduationCap } from "phosphor-react";
 
 export function About() {
   const Variants: Variants = {
@@ -30,7 +31,7 @@ export function About() {
     >
       <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white" >
         <div className=" flex xl:flex-col items-center justify-center space-x-10 lg:space-y-5 py-10">
-          <img src="./me2.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-l-[10rem] rounded-tr-[10rem] hover:scale-105 hover:border-4 border-2 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
+          <img src="./me.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-2xl object-cover hover:scale-105 hover:border-4 border-[1px] border-r-4 border-b-4 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
           <section className="flex flex-col items-start justify-center max-w-xl sm:w-full">
             <Title title="About Me" />
 
@@ -48,44 +49,73 @@ export function About() {
           </section>    
         </div>
 
-        <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 sm:space-x-4 min-w-[70rem]">
-          <li><SiJavascript className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiTypescript className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiReact className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiHtml5 className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
-          <li><SiCss3 className="text-[5rem] sm:text-5xl animate-bounce hover:animate-none dark:text-orange-400" /></li>
-        </motion.ul> 
+        <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 lg:space-x-8 sm:space-x-4 min-w-[70rem]">
+          <li className="flex items-center gap-2">
+            <SiJavascript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">JavaScript</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <SiTypescript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">TypeScript</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <SiReact className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">React</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <SiHtml5 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">HTML</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <SiCss3 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">CSS</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <SiGit className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
+            <p className="text-2xl lg:hidden">Git</p>
+          </li>
+        </motion.ul>
       </motion.div>
-
 
       <motion.div 
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }} 
-        className="sm:flex sm:items-center sm:justify-center w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 xl:mt-0"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }} 
+      className="sm:flex sm:flex-col sm:items-center sm:justify-center w-[1280px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 xl:mt-0"
       >
-        <motion.h1 variants={Variants} className="text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1> 
-      </motion.div>
+        <motion.h1 variants={Variants} className="flex justify-center text-xl text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1>
 
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.6 }} 
-        className="sm:flex sm:flex-col sm:items-center grid grid-rows-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col xl:grid-flow-row gap-4 sm:gap-8 dark:bg-white w-[1120px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-8 xl:mb-10"
-      >
-        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-lg">
-          <h1>Last Graduation Period of Information System</h1>
-        </motion.section>
-        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-lg">
-          <h1>Web Development Course With ReactJS</h1>
-        </motion.section>
-        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-lg">
-          <h1>Intermediary English</h1>
-        </motion.section>
-        <motion.section variants={Variants} className="flex items-center justify-center max-w-xs max-h-28 sm:w-full bg-gradient-to-br from-purple-600 to-[#736cfeab] dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00] text-white font-Roboto p-10 rounded-xl shadow-lg">
-          <h1>Professional Remote Work and Virtual Collaboration Certification</h1>
-        </motion.section>
+        <motion.div variants={Variants} className="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 lg:gap-y-36 lg:gap-x-4 gap-4 mt-20">
+          <motion.div className="flex flex-col items-center">
+            <motion.section  className="flex items-center justify-center w-full max-h-32 lg:max-h-28 bg-transparent border-2 border-purple-600 dark:border-orange-400 text-white dark:text-purple-900 font-Roboto p-10 rounded-xl shadow-lg">
+              <h1>Last graduation period of Information System</h1>
+            </motion.section>
+            <GraduationCap size={70} className="text-white -mt-[10.5rem] lg:-mt-[9.6rem] bg-purple-900 dark:bg-orange-400 dark:text-purple-900 rounded-full p-3" />          
+          </motion.div>
+
+          <motion.div className="flex flex-col items-center">
+            <motion.section  className="flex items-center justify-center w-full max-h-32 lg:max-h-28 bg-transparent border-2 border-purple-600 dark:border-orange-400 text-white dark:text-purple-900 font-Roboto p-10 rounded-xl shadow-lg">
+              <h1>Web development course with ReactJS</h1>
+            </motion.section>
+            <Code size={70} className="text-white -mt-[10.5rem] lg:-mt-[9.6rem] bg-purple-900 dark:bg-orange-400 dark:text-purple-900 rounded-full p-3" />          
+          </motion.div>
+
+          <motion.div className="flex flex-col items-center">
+            <motion.section  className="flex items-center justify-center w-full max-h-32 lg:max-h-28 bg-transparent border-2 border-purple-600 dark:border-orange-400 text-white dark:text-purple-900 font-Roboto p-10 rounded-xl shadow-lg">
+              <h1>Writing and speaking intermediate level in English</h1>
+            </motion.section>
+            <GlobeHemisphereWest size={70} className="text-white -mt-[10.5rem] lg:-mt-[9.6rem] bg-purple-900 dark:bg-orange-400 dark:text-purple-900 rounded-full p-3" />          
+          </motion.div>
+
+          <motion.div className="flex flex-col items-center">
+            <motion.section  className="flex items-center justify-center w-full max-h-32 lg:max-h-28 bg-transparent border-2 border-purple-600 dark:border-orange-400 text-white dark:text-purple-900 font-Roboto p-10 rounded-xl shadow-lg">
+              <h1>Professional Remote Work and Virtual Collaboration Certification</h1>
+            </motion.section>
+            <CircleWavyCheck size={70} className="text-white -mt-[10.5rem] lg:-mt-[9.6rem] lg:mb-32 bg-purple-900 dark:bg-orange-400 dark:text-purple-900 rounded-full p-3" />          
+          </motion.div>
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </motion.div> 
   )
 }
+            
