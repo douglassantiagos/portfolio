@@ -31,7 +31,7 @@ export function About() {
     >
       <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white" >
         <div className=" flex xl:flex-col items-center justify-center space-x-10 lg:space-y-5 py-10">
-          <img src="./me.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-2xl object-cover hover:scale-105 hover:border-4 border-[1px] border-r-4 border-b-4 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
+          <img src="./me.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-full object-cover hover:scale-105 hover:border-4 border-[1px] border-r-4 border-b-4 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
           <section className="flex flex-col items-start justify-center max-w-xl sm:w-full">
             <Title title="About Me" />
 
@@ -52,27 +52,27 @@ export function About() {
         <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 lg:space-x-8 sm:space-x-4 min-w-[70rem]">
           <li className="flex items-center gap-2">
             <SiJavascript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">JavaScript</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">JavaScript</p>
           </li>
           <li className="flex items-center gap-2">
             <SiTypescript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">TypeScript</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">TypeScript</p>
           </li>
           <li className="flex items-center gap-2">
             <SiReact className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">React</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">React</p>
           </li>
           <li className="flex items-center gap-2">
             <SiHtml5 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">HTML</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">HTML</p>
           </li>
           <li className="flex items-center gap-2">
             <SiCss3 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">CSS</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">CSS</p>
           </li>
           <li className="flex items-center gap-2">
             <SiGit className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-2xl lg:hidden">Git</p>
+            <p className="text-xl lg:hidden text-white dark:text-purple-900">Git</p>
           </li>
         </motion.ul>
       </motion.div>
