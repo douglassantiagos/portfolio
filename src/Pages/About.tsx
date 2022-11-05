@@ -1,4 +1,4 @@
-import { SiJavascript, SiTypescript, SiReact, SiHtml5, SiCss3, SiGit } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiReact, SiHtml5, SiCss3, SiGit, SiNextdotjs, SiGithub, SiFigma } from "react-icons/si";
 import { motion, Variants } from "framer-motion";
 
 import { Title } from "../components/Title";
@@ -49,31 +49,37 @@ export function About() {
           </section>    
         </div>
 
-        <motion.ul variants={Variants} className="flex items-center justify-center space-x-10 lg:space-x-8 sm:space-x-4 min-w-[70rem]">
-          <li className="flex items-center gap-2">
-            <SiJavascript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">JavaScript</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <SiTypescript className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">TypeScript</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <SiReact className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">React</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <SiHtml5 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">HTML</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <SiCss3 className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">CSS</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <SiGit className="text-[1.5rem] lg:text-6xl sm:text-5xl dark:text-orange-400" />
-            <p className="text-xl lg:hidden text-white dark:text-purple-900">Git</p>
-          </li>
+        <motion.ul variants={Variants} className="flex flex-col items-center justify-center space-x-10 lg:space-x-8 sm:space-x-4 min-w-[70rem]">
+          <motion.h1 variants={Variants} className="flex justify-center text-xl text-white dark:text-purple-900 dark:font-bold">Technologies and Skills</motion.h1>
+          <div className="flex justify-center gap-5 mt-8 md:flex-wrap md:max-w-xl sm:max-w-sm">
+            <li className="flex items-center">
+              <SiJavascript title="Javascript" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiTypescript title="TypeScript" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiReact title="React" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiNextdotjs title="Next.js" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiHtml5 title="HTML" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />             
+            </li>
+            <li className="flex items-center">
+              <SiCss3 title="CSS" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiFigma title="Figma" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiGithub title="GitHub" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+            <li className="flex items-center">
+              <SiGit title="Git" className="text-5xl lg:text-6xl sm:text-5xl dark:text-orange-400 hover:scale-110 hover:transition-all hover:ease-out" />              
+            </li>
+          </div>
         </motion.ul>
       </motion.div>
 
@@ -85,7 +91,7 @@ export function About() {
       >
         <motion.h1 variants={Variants} className="flex justify-center text-xl text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1>
 
-        <motion.div variants={Variants} className="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 lg:gap-y-36 lg:gap-x-4 gap-4 mt-20">
+        <motion.div variants={Variants} className="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 lg:gap-y-36 lg:gap-x-4 gap-4 mt-14">
           <motion.div className="flex flex-col items-center">
             <motion.section  className="flex items-center justify-center w-full max-h-32 lg:max-h-28 bg-transparent border-2 border-purple-600 dark:border-orange-400 text-white dark:text-purple-900 font-Roboto p-10 rounded-xl shadow-lg">
               <h1>Last graduation period of Information System</h1>
@@ -113,6 +119,8 @@ export function About() {
             </motion.section>
             <CircleWavyCheck size={70} className="text-white -mt-[10.5rem] lg:-mt-[9.6rem] lg:mb-32 bg-purple-900 dark:bg-orange-400 dark:text-purple-900 rounded-full p-3" />          
           </motion.div>
+
+          <span className="md:hidden min-md:mt-24"></span>
         </motion.div>
       </motion.div>
     </motion.div> 
