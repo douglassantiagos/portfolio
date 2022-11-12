@@ -40,6 +40,21 @@ export const data = {
     className: "flex flex-row space-x-4 shadow-xl rounded-xl mt-20",
   },
 
+  IGNITETIMER: {
+    image: "./ignite_timer.png",
+    title: "Ignite Timer",
+    description: "The Ignite Timer is a pomodoro based on the idea of ​​dividing the flow of tasks into blocks of time, improving intense brain agility and stimulating focus.",
+    tech_pri: "Typescript",
+    tech_sec: "React",
+    tech_third: "Styled Components",
+    tech_fourth: "React-Hook-Form",
+    tech_fifth: "React-Router-Dom",
+    tech_sixth: "Vite",
+    linkVisit: "https://ignite-timer-project.vercel.app/",
+    linkGithub: "https://github.com/douglassantiagos/ignite_timer_reactjs",
+    className: "flex flex-row-reverse space-x-4 shadow-xl rounded-xl mt-20",
+  },
+
   TODOLIST: {
     image: "./todolist.png",
     title: "ToDo",
