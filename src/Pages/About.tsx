@@ -29,7 +29,7 @@ export function About() {
       viewport={{ once: true, amount: 0.2 }} 
       className="flex flex-col min-h-screen justify-center items-center min-w-full m-auto dark:bg-white"
     >
-      <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white" >
+      <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:mt-5 sm:space-y-0 dark:bg-white" >
         <div className=" flex xl:flex-col items-center justify-center space-x-10 lg:space-y-5 py-10">
           <img src="./me.jpg" className="w-80 h-80 sm:w-60 sm:h-60 rounded-full object-cover hover:scale-105 hover:border-4 border-[1px] border-r-4 border-b-4 border-purple-600 transition-all duration-450 ease-linear dark:border-orange-400" />
           <section className="flex flex-col items-start justify-center max-w-xl sm:w-full">
@@ -87,7 +87,7 @@ export function About() {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.4 }} 
-      className="sm:flex sm:flex-col sm:items-center sm:justify-center w-[1280px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 xl:mt-0"
+      className="sm:flex sm:flex-col sm:items-center sm:justify-center w-[1280px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 lg:mt-20  xl:mt-0"
       >
         <motion.h1 variants={Variants} className="flex justify-center text-xl text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1>
 
