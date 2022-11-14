@@ -26,7 +26,7 @@ export function About() {
       id="about"
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.4 }} 
+      viewport={{ once: true, amount: 0.2 }} 
       className="flex flex-col min-h-screen justify-center items-center min-w-full m-auto dark:bg-white"
     >
       <motion.div variants={Variants} className="flex flex-col 2xl:max-w-5xl xl:max-w-3xl md:max-w-2xl sm:max-w-sm items-center justify-center space-y-5 lg:my-20 sm:space-y-0 dark:bg-white" >
@@ -86,7 +86,7 @@ export function About() {
       <motion.div 
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }} 
+      viewport={{ once: true, amount: 0.4 }} 
       className="sm:flex sm:flex-col sm:items-center sm:justify-center w-[1280px] 2xl:w-[1024px] xl:w-[768px] md:w-[670px] sm:w-[380px] mt-20 xl:mt-0"
       >
         <motion.h1 variants={Variants} className="flex justify-center text-xl text-white dark:text-purple-900 dark:font-bold">Some Qualifications</motion.h1>

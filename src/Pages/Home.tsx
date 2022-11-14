@@ -35,21 +35,55 @@ export function Home() {
     }
   };
 
+  const VariantsMobile: Variants = {
+    offscreen: {
+      y: 300,
+      opacity: -0.1,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1.5,
+        delay: 0.5
+      }
+    }
+  };
+
+  const imageVariantsMobile: Variants = {
+    offscreen: {
+      y: 900,
+      opacity: -0.1
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1,
+        delay: 0.5
+      }
+    }
+  };
+
   return (
     <>    
       <motion.div 
         id="Home"
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="min-md:hidden w-full min-h-screen md:min-h-max py-20 m-auto dark:bg-gradient-to-br dark:from-[#FF9900] dark:to-[#FF7C00]"    
       >
-        <motion.div variants={Variants} className="flex flex-col space-y-4 sm:space-y-10 w-[90vw] m-auto" >
-          <motion.section variants={imageVariants} className="flex items-center justify-center -mt-5 ">
+        <motion.div variants={VariantsMobile} className="flex flex-col space-y-4 sm:space-y-10 w-[90vw] m-auto" >
+          <motion.section variants={imageVariantsMobile} className="flex items-center justify-center -mt-5 ">
             <img className="max-w-md sm:max-w-sm rounded-b-full drop-shadow-x" src="./avatar.png" />
           </motion.section>   
 
-          <motion.section variants={Variants} className="flex flex-wrap flex-col items-start justify-center m-auto">
+          <motion.section variants={VariantsMobile} className="flex flex-wrap flex-col items-start justify-center m-auto">
             <div className="flex items-center">
               <div className="flex flex-col sm:-space-y-1 items-center">
                 <h1 className="text-4xl text-white sm:text-xl">HI,</h1>

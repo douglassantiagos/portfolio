@@ -26,7 +26,7 @@ export function Projects() {
       id="projects" 
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.4 }} 
+      viewport={{ once: true, amount: 0.3 }} 
       className="flex flex-col min-h-screen m-auto w-full dark:bg-slate-100"
     >
       <motion.section variants={Variants} className="m-auto flex flex-col items-start lg:items-center sm:items-start lg:space-y-5 my-10 max-w-7xl 2xl:max-w-5xl lg:max-w-3xl sm:max-w-sm">
