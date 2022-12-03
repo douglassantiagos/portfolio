@@ -40,6 +40,21 @@ export const data = {
     className: "flex flex-row space-x-4 shadow-xl rounded-xl mt-20",
   },
 
+  COFFEEDELIVERY: {
+    image: "./coffee-delivery.png",
+    title: "Coffee Delivery",
+    description: "Coffee Delivery is an application to manage a shopping cart for a fictional coffee shop.",
+    tech_pri: "Typescript",
+    tech_sec: "React",
+    tech_third: "Styled Components",
+    tech_fourth: "React-Hook-Form",
+    tech_fifth: "React-Router-Dom",
+    tech_sixth: "Vite",
+    linkVisit: "https://coffee-delivery-project.vercel.app/",
+    linkGithub: "https://github.com/douglassantiagos/coffee_delivery",
+    className: "flex flex-row space-x-4 shadow-xl rounded-xl mt-20",
+  },
+
   IGNITETIMER: {
     image: "./ignite_timer.png",
     title: "Ignite Timer",

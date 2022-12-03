@@ -31,13 +31,13 @@ export function Project({ data }: ProjectProps) {
               <p className="font-Roboto text-base text-gray-400 dark:text-gray-600">
                 {value.description}
               </p>
-              <ul className="flex font-Roboto text-gray-400 text-sm space-x-5 sm:space-x-3 dark:text-purple-900">
-                <li>{value.tech_pri}</li>
-                <li>{value.tech_sec}</li>
-                <li>{value.tech_third}</li>
-                <li>{value.tech_fourth}</li>
-                <li>{value.tech_fifth}</li>
-                <li>{value.tech_sixth}</li>
+              <ul className="flex flex-wrap font-Roboto text-gray-400 text-sm space-x-5 sm:space-x-0 dark:text-purple-900">
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_pri}</li>
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_sec}</li>
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_third}</li>
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_fourth}</li>
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_fifth}</li>
+                <li className='sm:pt-1 sm:pr-3'>{value.tech_sixth}</li>
               </ul>
               <div className="flex space-x-5">
                 { value.linkVisit ? (
