@@ -12,6 +12,20 @@ export const data = {
     linkGithub: "https://github.com/douglassantiagos/pokedex_project_reactjs",
   },
 
+  DTMONEY: {
+    image: "./dtmoney-photo.png",
+    title: "DT Money",
+    description: "This Application was developed to manager inflow and outflow money process of you own life or business.",
+    tech_pri: "Typescript",
+    tech_sec: "React",
+    tech_third: "Styled-Components",
+    tech_fourth: "React-Hook-Form",
+    tech_fifth: "Axios",
+    tech_sixth: "Json-server",
+    linkGithub: "https://github.com/douglassantiagos/dt_money_reactjs",
+    className: "flex flex-row-reverse space-x-4 shadow-xl rounded-xl mt-20",
+  },
+
   IGNEWS: {
     image: "./ignews-photo.png",
     title: "Ignews",
